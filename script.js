@@ -21,5 +21,12 @@ console.log(todoList);
 
 //func add to do
 const addTodo = () => {
-    
+    const userEnter = inputEnterEl.value;
+    if (userEnter !== '') {
+        // console.log(...todoList, inputEnterEl.value);
+        todoList.push(userEnter)
+    }
+    console.log(todoList, "todoList")
 }
+
+submitEl.addEventListener('click', addTodo);
