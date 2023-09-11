@@ -30,3 +30,5 @@ const addTodo = () => {
 }
 
 submitEl.addEventListener('click', addTodo);
+
+console.log('ssh test');
